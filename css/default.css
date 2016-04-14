@@ -1,0 +1,19 @@
+img[title="logo"]{
+  clear: both;
+}
+header{
+
+}
+#mainNav{
+  clear: both;
+}
+#mainNav ul{
+  text-align: center;
+}
+#mainNav ul li{
+  display:inline;
+}
+#mainNav ul li a{
+  display: inline-block;
+  padding: 0.5em;
+}
