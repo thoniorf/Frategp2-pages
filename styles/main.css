@@ -22,9 +22,9 @@ nav {
 }
 
 nav a {
-  display: block;
   text-decoration: none;
-  color: #FFF;
+  color: #5a5a5a;
+  font-weight: bold;
 }
 
 nav li:nth-child(1) a:hover{
@@ -36,19 +36,25 @@ nav li:nth-child(2) a:hover{
 nav li:nth-child(3) a:hover{
   color: #eb2e2e;
 }
+nav li:nth-child(4) a:hover{
+  color: #762eeb;
+}
+nav li:nth-child(5) a:hover{
+  color: #ebbb2e;
+}
 
 nav > ul {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  flex-flow: row;
+  justify-content: center;
   list-style: none;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 nav > ul > li {
-  flex: 1;
+  flex: 1 1 content;
   text-align: center;
+  padding: 5px 1em 5px 1em;
 }
-
 /* MAIN */
 main {
   position: relative;
@@ -133,10 +139,12 @@ section.project > p
   margin-top: -1em;
   margin-bottom: -1em;
   overflow:hidden;
+
 }
 .background-content > img {
   width: 100%;
-  height: auto;
+  height: 50vh;
+  object-fit: cover;
 }
 
 /* FOOTER */
