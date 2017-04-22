@@ -45,7 +45,7 @@ nav li:nth-child(5) a:hover{
 
 nav > ul {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   justify-content: center;
   list-style: none;
   font-size: 2em;
