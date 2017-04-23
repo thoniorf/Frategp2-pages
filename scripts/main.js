@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     anchors[i].addEventListener("click", function(event){
       event.preventDefault();
       var anchor_target = document.getElementById(this.getAttribute("href").substring(1));
-      anchorScroll(anchor_target,10,10,main[0]);
+      anchorScroll(anchor_target,25,5,main[0]);
     });
   }
 

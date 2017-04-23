@@ -59,7 +59,7 @@ nav > ul > li {
 main {
   position: relative;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
 }
 
 main > * {
@@ -73,7 +73,7 @@ main > header {
   flex-flow: column nowrap;
   width: 100%;
   height: 100vh;
-  background-image: url("/assets/images/pexels-photo-1.jpeg");
+  background-image: url("/assets/images/pexels-photo-1.webp");
   background-size: cover;
 }
 
