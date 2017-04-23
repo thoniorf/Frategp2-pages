@@ -1,3 +1,11 @@
+:root
+{
+  --section-color-blue : #2e9beb;
+  --section-color-red : #eb2e2e;
+  --section-color-violet : #762eeb;
+  --section-color-yellow : #ebbb2e;
+  --section-color-green : #3deb2e;
+}
 * {
   padding: 0;
   margin: 0;
@@ -28,19 +36,19 @@ nav a {
 }
 
 nav li:nth-child(1) a:hover{
-  color: #3deb2e;
+  color: var(--section-color-green);
 }
-nav li:nth-child(2) a:hover{
-  color: #2e9beb;
+nav li:nth-child(2) a:hover, main > section:nth-of-type(1) > h2{
+  color: var(--section-color-blue);
 }
-nav li:nth-child(3) a:hover{
-  color: #eb2e2e;
+nav li:nth-child(3) a:hover, main > section:nth-of-type(2) > h2{
+  color: var(--section-color-red);
 }
-nav li:nth-child(4) a:hover{
-  color: #762eeb;
+nav li:nth-child(4) a:hover, main > section:nth-of-type(3) > h2{
+  color: var(--section-color-violet);
 }
-nav li:nth-child(5) a:hover{
-  color: #ebbb2e;
+nav li:nth-child(5) a:hover, main > section:nth-of-type(4) > h2{
+  color: var(--section-color-yellow);
 }
 
 nav > ul {
@@ -54,6 +62,7 @@ nav > ul > li {
   flex: 1 1 content;
   text-align: center;
   padding: 5px 1em 5px 1em;
+  min-width: 1em;
 }
 /* MAIN */
 main {
@@ -79,7 +88,7 @@ main > header {
 
 main > section {
   padding: 1.5em;
-  height: 50vh;
+  min-height: 50vh;
 }
 main > section:nth-child(odd){
   background-color: #ffffff;
@@ -96,12 +105,15 @@ main > section:nth-child(even){
   margin: auto auto;
 }
 
-
 /* SECTIONS */
+section > h2 {
+  font-weight: bold;
+}
 section#projects {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-content: space-between;
 
 }
 section.project{
@@ -149,6 +161,11 @@ section.project > p
 
 /* FOOTER */
 footer {
-  margin-top: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: white;
+  min-height: 10vh;
   text-align: center;
+  vertical-align: middle;
+  background-color: #5a5a5a;
 }
