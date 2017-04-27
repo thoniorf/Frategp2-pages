@@ -67,7 +67,7 @@ main > header {
   flex-flow: column nowrap;
   width: 100%;
   min-height: 100vh;
-  background-image: url("/assets/images/pexels-photo-1.webp");
+  background-image: url("../assets/images/pexels-photo-1.webp");
   background-size: cover;
 }
 
